@@ -676,8 +676,10 @@ version = "0.1.0"
 
 [[MultiFidelityBehaviorPrediction]]
 deps = ["CSV", "Convex", "CoordinateTransformations", "DataFrames", "DecisionMaking", "DiffResults", "Distributions", "ForwardDiff", "LibSpatialIndex", "LightGraphs", "LinearAlgebra", "MetaGraphs", "NGSIM", "Parameters", "Plots", "Roadways", "Rotations", "SCS", "StaticArrays"]
-path = "/Users/kyle/.julia/dev/MultiFidelityBehaviorPrediction"
-uuid = "aac9728b-ed44-56db-b9c0-532830838909"
+git-tree-sha1 = "41424c114ec89355079a14cb0671d03f918517f3"
+repo-rev = "master"
+repo-url = "https://github.com/kylejbrown17/MultiFidelityBehaviorPrediction.jl.git"
+uuid = "34184550-fe6c-11e8-30fe-716b78cf3674"
 version = "0.1.0"
 
 [[NGSIM]]
