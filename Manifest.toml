@@ -342,9 +342,9 @@ uuid = "9fa8497b-333b-5362-9e8d-4d0656e87820"
 
 [[GLPK]]
 deps = ["BinaryProvider", "Compat", "Libdl", "LinQuadOptInterface"]
-git-tree-sha1 = "a8e1ef471ba51cd1ee7f59ab7b13f2da73cbbbe3"
+git-tree-sha1 = "82f64bfd090a95b7670ed0d7c734220f32983386"
 uuid = "60bf3e95-4087-53dc-ae20-288a0d20c6a6"
-version = "0.9.0"
+version = "0.9.1"
 
 [[GLPKMathProgInterface]]
 deps = ["Compat", "GLPK", "MathProgBase"]
@@ -594,9 +594,9 @@ version = "1.2.0"
 
 [[LinQuadOptInterface]]
 deps = ["Compat", "MathOptInterface"]
-git-tree-sha1 = "bb40dcef4a35945063673edc127c6915aa2909d8"
+git-tree-sha1 = "d6692a09d0424e34c884cd819b8ed47943eefc20"
 uuid = "f8899e07-120b-5979-ab1d-7b97bb9e1a48"
-version = "0.5.0"
+version = "0.6.0"
 
 [[LinearAlgebra]]
 deps = ["Libdl"]
@@ -623,9 +623,9 @@ uuid = "d6f4376e-aef5-505a-96c1-9c027394607a"
 
 [[MathOptInterface]]
 deps = ["Compat", "Unicode"]
-git-tree-sha1 = "a32857081a812c2fb975bbbc3f87c61e653c479b"
+git-tree-sha1 = "e88e00ffef6e4cdd515b1b3f4be84b55ff664379"
 uuid = "b8f27783-ece8-5eb3-8dc8-9495eed66fee"
-version = "0.7.0"
+version = "0.8.0"
 
 [[MathProgBase]]
 deps = ["Compat"]
@@ -667,8 +667,8 @@ version = "0.3.1"
 uuid = "a63ad114-7e13-5084-954f-fe012c677804"
 
 [[MultiAgentFactory]]
-deps = ["Colors", "Compose", "Distributions", "LightGraphs", "POMDPs", "Parameters", "Reel"]
-git-tree-sha1 = "010e94ad53c7dc770f8747d9d2e226a0184d711a"
+deps = ["Colors", "Compose", "Distributions", "LightGraphs", "LinearAlgebra", "MetaGraphs", "POMDPs", "Parameters", "Reel"]
+git-tree-sha1 = "ef0dc5a8aaec9506cf0d37b8171fc27f0193296b"
 repo-rev = "master"
 repo-url = "https://github.com/kylejbrown17/MultiAgentFactory.jl.git"
 uuid = "e1db0f5e-033c-11e9-27d1-35b020e889c9"
@@ -676,7 +676,7 @@ version = "0.1.0"
 
 [[MultiFidelityBehaviorPrediction]]
 deps = ["CSV", "Convex", "CoordinateTransformations", "DataFrames", "DecisionMaking", "DiffResults", "Distributions", "ForwardDiff", "LibSpatialIndex", "LightGraphs", "LinearAlgebra", "MetaGraphs", "NGSIM", "Parameters", "Plots", "Roadways", "Rotations", "SCS", "StaticArrays"]
-git-tree-sha1 = "41424c114ec89355079a14cb0671d03f918517f3"
+git-tree-sha1 = "b652b61894abc904b8382175fafeeff2498ab163"
 repo-rev = "master"
 repo-url = "https://github.com/kylejbrown17/MultiFidelityBehaviorPrediction.jl.git"
 uuid = "34184550-fe6c-11e8-30fe-716b78cf3674"
@@ -864,7 +864,7 @@ version = "0.5.0"
 
 [[Roadways]]
 deps = ["HDF5", "LibSpatialIndex", "LightGraphs", "LinearAlgebra", "MetaGraphs", "NearestNeighbors", "Parameters", "Plots", "StaticArrays"]
-git-tree-sha1 = "25693a67e1bb1989e8190ede1a24aea776e15ef2"
+git-tree-sha1 = "f28a473e6d24970308756818ae10b5c41d4970ac"
 repo-rev = "master"
 repo-url = "https://github.com/sisl/Roadways.jl.git"
 uuid = "20568c56-94ac-525a-8f38-92363f7fd59c"
@@ -884,9 +884,9 @@ version = "0.2.0"
 
 [[SCS]]
 deps = ["BinaryProvider", "Compat", "Libdl", "MathOptInterface", "MathProgBase"]
-git-tree-sha1 = "ee9980acad17b3f9a485a6ac6abc56fd9a92b3e9"
+git-tree-sha1 = "f3372fde752302d3cd38d00e2adaf3a7731f7061"
 uuid = "c946c3f1-0d1f-5ce8-9dea-7daa1f7e2d13"
-version = "0.5.0"
+version = "0.5.1"
 
 [[SHA]]
 uuid = "ea8e919c-243c-51af-8825-aaa63cd721ce"
@@ -1031,6 +1031,14 @@ uuid = "cf7118a7-6976-5b1a-9a39-7adc72f591a4"
 
 [[Unicode]]
 uuid = "4ec0a83e-493e-50e2-b9ac-8f72acf5a8f5"
+
+[[Vec]]
+deps = ["LinearAlgebra", "Printf", "Random", "StaticArrays"]
+git-tree-sha1 = "e31c2b197a0a794e43e55e1b441ef1dc21d37444"
+repo-rev = "master"
+repo-url = "https://github.com/sisl/Vec.jl"
+uuid = "44eeaf0b-fee4-471f-9310-ed6585cb3142"
+version = "0.0.0"
 
 [[VersionParsing]]
 deps = ["Compat"]
