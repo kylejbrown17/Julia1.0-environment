@@ -248,9 +248,9 @@ version = "0.2.0"
 
 [[DataFrames]]
 deps = ["CategoricalArrays", "CodecZlib", "Compat", "DataStreams", "Dates", "InteractiveUtils", "IteratorInterfaceExtensions", "LinearAlgebra", "Missings", "Printf", "Random", "Reexport", "SortingAlgorithms", "Statistics", "StatsBase", "TableTraits", "Tables", "Test", "TranscodingStreams", "Unicode", "WeakRefStrings"]
-git-tree-sha1 = "7e032a76f3455e38660ac456791951ac2d0b1e70"
+git-tree-sha1 = "af5c8a233b838076947ef0c8f882f732ad578112"
 uuid = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
-version = "0.16.0"
+version = "0.17.0"
 
 [[DataStreams]]
 deps = ["Dates", "Missings", "Test", "WeakRefStrings"]
@@ -391,8 +391,10 @@ uuid = "53c48c17-4a7d-5ca2-90c5-79b7896eea93"
 version = "0.5.3"
 
 [[Flux]]
-deps = ["AbstractTrees", "Adapt", "CodecZlib", "Colors", "DiffRules", "ForwardDiff", "Juno", "LinearAlgebra", "MacroTools", "NNlib", "NaNMath", "Printf", "Random", "Reexport", "Requires", "SpecialFunctions", "Statistics", "StatsBase", "Test", "ZipFile"]
-path = "/home/kylebrown/.julia/dev/Flux"
+deps = ["AbstractTrees", "Adapt", "CodecZlib", "Colors", "DiffRules", "ForwardDiff", "Juno", "LinearAlgebra", "MacroTools", "NNlib", "NaNMath", "Pkg", "Printf", "Random", "Reexport", "Requires", "SpecialFunctions", "Statistics", "StatsBase", "Test", "ZipFile"]
+git-tree-sha1 = "8e9104ceffb76aa63c460ae00b101f87cd5bc84d"
+repo-rev = "master"
+repo-url = "https://github.com/FluxML/Flux.jl.git"
 uuid = "587475ba-b771-5e3f-ad9e-33799f191a9c"
 version = "0.7.0+"
 
@@ -428,15 +430,9 @@ uuid = "9fa8497b-333b-5362-9e8d-4d0656e87820"
 
 [[GLPK]]
 deps = ["BinaryProvider", "Compat", "Libdl", "LinQuadOptInterface"]
-<<<<<<< HEAD
 git-tree-sha1 = "fd8611745ac49689673fce6714893b3cd2301ab5"
 uuid = "60bf3e95-4087-53dc-ae20-288a0d20c6a6"
 version = "0.8.3"
-=======
-git-tree-sha1 = "82f64bfd090a95b7670ed0d7c734220f32983386"
-uuid = "60bf3e95-4087-53dc-ae20-288a0d20c6a6"
-version = "0.9.1"
->>>>>>> 143ee8161de848aabaa1c42f4156b50c22b73ffc
 
 [[GLPKMathProgInterface]]
 deps = ["Compat", "GLPK", "MathProgBase"]
@@ -524,9 +520,9 @@ version = "0.7.1"
 
 [[IJulia]]
 deps = ["Base64", "Conda", "Dates", "InteractiveUtils", "JSON", "Markdown", "MbedTLS", "Pkg", "Printf", "REPL", "Random", "SoftGlobalScope", "Test", "UUIDs", "ZMQ"]
-git-tree-sha1 = "d497790270e0abcf0c5b50c5cf7d71b1c16338d6"
+git-tree-sha1 = "5b121bf5df700f0766497415b23c6aa4a2620460"
 uuid = "7073ff75-c697-5162-941a-fcdaad2a7d2a"
-version = "1.15.1"
+version = "1.15.2"
 
 [[IdentityRanges]]
 deps = ["OffsetArrays", "Test"]
@@ -695,10 +691,10 @@ uuid = "50d2b5c4-7a5e-59d5-8109-a42b560f39c0"
 version = "0.13.2"
 
 [[LazySets]]
-deps = ["Compat", "Expokit", "GLPKMathProgInterface", "IntervalArithmetic", "MathProgBase", "Pkg", "Random", "RecipesBase", "Requires", "SparseArrays"]
-git-tree-sha1 = "2ed8d23fd964e155e9c2b891637a8f7c910d4264"
+deps = ["Compat", "Distributed", "Expokit", "GLPKMathProgInterface", "IntervalArithmetic", "MathProgBase", "Pkg", "Random", "RecipesBase", "Requires", "SharedArrays", "SparseArrays"]
+git-tree-sha1 = "2abfb82bb3e6f72dabac2302e52b1a7e2521eed5"
 uuid = "b4f0291d-fe17-52bc-9479-3d1a343d9043"
-version = "1.5.2"
+version = "1.5.3"
 
 [[LibCURL]]
 deps = ["BinaryProvider", "Compat", "Libdl", "Printf"]
@@ -839,9 +835,11 @@ uuid = "e1db0f5e-033c-11e9-27d1-35b020e889c9"
 version = "0.1.0"
 
 [[MultiFidelityBehaviorPrediction]]
-deps = ["CSV", "Convex", "CoordinateTransformations", "DataFrames", "DecisionMaking", "DiffResults", "Distributions", "Flux", "ForwardDiff", "LibSpatialIndex", "LightGraphs", "LinearAlgebra", "MetaGraphs", "NGSIM", "Parameters", "Plots", "Printf", "Query", "Roadways", "Rotations", "SCS", "StaticArrays"]
-path = "/home/kylebrown/.julia/dev/MultiFidelityBehaviorPrediction"
-uuid = "aac9728b-ed44-56db-b9c0-532830838909"
+deps = ["CSV", "Convex", "CoordinateTransformations", "DataFrames", "DecisionMaking", "DiffResults", "Distributions", "ForwardDiff", "LibSpatialIndex", "LightGraphs", "LinearAlgebra", "MetaGraphs", "NGSIM", "Parameters", "Plots", "Roadways", "Rotations", "SCS", "StaticArrays"]
+git-tree-sha1 = "93315f8bfc2723f9183d1477d5ca26a64878d551"
+repo-rev = "master"
+repo-url = "https://github.com/kylejbrown17/MultiFidelityBehaviorPrediction.jl.git"
+uuid = "34184550-fe6c-11e8-30fe-716b78cf3674"
 version = "0.1.0"
 
 [[Mustache]]
@@ -920,7 +918,7 @@ version = "0.9.6"
 
 [[POMDPs]]
 deps = ["Distributions", "LibGit2", "Pkg", "Random", "Statistics", "Test"]
-git-tree-sha1 = "811d6b54b885ca1a12da49e55bf25148b6b9cc3e"
+git-tree-sha1 = "3d79641653ccd3cb7bb82b176937eeb5db469288"
 repo-rev = "master"
 repo-url = "https://github.com/JuliaPOMDP/POMDPs.jl.git"
 uuid = "a93abf59-7444-517b-a68a-c42f96afdd7d"
@@ -988,9 +986,9 @@ version = "0.12.2"
 
 [[Plots]]
 deps = ["Base64", "Contour", "Dates", "FixedPointNumbers", "GR", "JSON", "LinearAlgebra", "Measures", "NaNMath", "Pkg", "PlotThemes", "PlotUtils", "Printf", "REPL", "Random", "RecipesBase", "Reexport", "Requires", "Showoff", "SparseArrays", "StaticArrays", "Statistics", "StatsBase", "Test", "UUIDs"]
-git-tree-sha1 = "3a7d51ca722a7e4a9bc71d6688045289d52ed65b"
+git-tree-sha1 = "40e65916a51e3d6fc53f031a3f0ef2fd46e5d442"
 uuid = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
-version = "0.22.2"
+version = "0.22.5"
 
 [[PositiveFactorizations]]
 deps = ["LinearAlgebra", "Test"]
@@ -1064,7 +1062,9 @@ version = "0.6.0"
 
 [[Reel]]
 deps = ["Test", "VideoIO"]
-path = "/home/kylebrown/.julia/dev/Reel"
+git-tree-sha1 = "1ae80ad26923f5ddcc32415ad7e9dd8eca81e049"
+repo-rev = "master"
+repo-url = "https://github.com/shashi/Reel.jl.git"
 uuid = "71555da5-176e-5e73-a222-aebc6c6e4f2f"
 version = "1.1.1+"
 
@@ -1096,9 +1096,9 @@ version = "0.0.0"
 
 [[Rotations]]
 deps = ["LinearAlgebra", "Random", "StaticArrays", "Statistics", "Test"]
-git-tree-sha1 = "40f63689787ad81cd014361405997b78a5595944"
+git-tree-sha1 = "ffcdd81d77b333ad0507aa4d021f61a461b6681d"
 uuid = "6038ab10-8711-5258-84ad-4b1120ba62dc"
-version = "0.9.2"
+version = "0.10.0"
 
 [[RoundingIntegers]]
 deps = ["Test"]
