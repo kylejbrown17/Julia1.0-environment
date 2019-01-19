@@ -428,9 +428,15 @@ uuid = "9fa8497b-333b-5362-9e8d-4d0656e87820"
 
 [[GLPK]]
 deps = ["BinaryProvider", "Compat", "Libdl", "LinQuadOptInterface"]
+<<<<<<< HEAD
 git-tree-sha1 = "fd8611745ac49689673fce6714893b3cd2301ab5"
 uuid = "60bf3e95-4087-53dc-ae20-288a0d20c6a6"
 version = "0.8.3"
+=======
+git-tree-sha1 = "82f64bfd090a95b7670ed0d7c734220f32983386"
+uuid = "60bf3e95-4087-53dc-ae20-288a0d20c6a6"
+version = "0.9.1"
+>>>>>>> 143ee8161de848aabaa1c42f4156b50c22b73ffc
 
 [[GLPKMathProgInterface]]
 deps = ["Compat", "GLPK", "MathProgBase"]
